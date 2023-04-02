@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+	--c1: #ffffff;
+	--c2: #c9c9c9;
+	--c3: #858585;
+	--c4: #161616;
+	--sz: 8vmin;
+	height: 100vh;
+	overflow: hidden;
+	background:
+
+		/*bg*/
+		linear-gradient(-150deg, var(--c4) calc(50% - calc(var(--sz) * 3.5)), #fff0 0),
+		linear-gradient(150deg, var(--c4) calc(50% - calc(var(--sz) * 3.5)), #fff0 0),
+		linear-gradient(-30deg, var(--c4) calc(50% - calc(var(--sz) * 3.5)), #fff0 0),
+		linear-gradient(30deg, var(--c4) calc(50% - calc(var(--sz) * 3.5)), #fff0 0),
+		linear-gradient(90deg,var(--c4) calc(50% - calc(var(--sz) * 3.5)), #fff0 0 calc(50% + calc(var(--sz) * 3.5)), var(--c4) 0),
+
+		/*granite*/
+		repeating-conic-gradient(#0004 0.00001%, transparent .00005%, transparent .0005%, transparent .00005%),
+		repeating-conic-gradient(#fff2 0.00002%, transparent .00008%, transparent .0008%, transparent .00008%),
+
+		/*right hole*/
+		conic-gradient(from 60deg at calc(50% + calc(var(--sz) * 1)) calc(50% + calc(var(--sz) * 2.5)), var(--c1) 0 120deg, #fff0 0 360deg),
+		conic-gradient(from 60deg at calc(50% + calc(var(--sz) * 2.65)) calc(50% - calc(var(--sz) * 1)), var(--c1) 0 120deg, #fff0 0 360deg),
+		conic-gradient(from 60deg at calc(50% + calc(var(--sz) * 1)) calc(50% + calc(var(--sz) * 0.6)), var(--c3) 0 60deg, var(--c2) 0 120deg, #fff0 0 360deg),
+
+		/*left hole*/
+		conic-gradient(from 180deg at calc(50% - calc(var(--sz) * 1)) calc(50% + calc(var(--sz) * 2.5)), var(--c3) 0 120deg, #fff0 0 360deg),
+		conic-gradient(from 180deg at calc(50% - calc(var(--sz) * 2.65)) calc(50% - calc(var(--sz) * 1)), var(--c3) 0 120deg, #fff0 0 360deg),
+		conic-gradient(from 180deg at calc(50% - calc(var(--sz) * 1)) calc(50% + calc(var(--sz) * 0.6)), var(--c2) 0 60deg, var(--c1) 0 120deg, #fff0 0 360deg),
+
+		/*top hole*/
+		conic-gradient(from -60deg at calc(50% + calc(var(--sz) * 1.9)) calc(50% - calc(var(--sz) * 2)), var(--c2) 0 120deg, #fff0 0 360deg),
+		conic-gradient(from -60deg at calc(50% - calc(var(--sz) * 1.9)) calc(50% - calc(var(--sz) * 2)), var(--c2) 0 120deg, #fff0 0 360deg),
+		conic-gradient(from -60deg at 50% calc(50% - calc(var(--sz) * 1)), var(--c1) 0 60deg, var(--c3) 0 120deg, #fff0 0 360deg),
+
+		/*center*/
+		conic-gradient(from -60deg at 50% 50%, var(--c2) 0 120deg, var(--c1) 0 240deg, var(--c3) 0 360deg);
+}
+
+    </style>
+</head>
+<body>
+</body>
+</html>
